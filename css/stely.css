@@ -1,0 +1,75 @@
+body{
+    background-color: #F7ECDE;
+    
+}
+
+::selection{
+    background-color: #FEC260;
+    color: #000;
+}
+section h1{
+    
+  
+    padding-bottom: 50px;
+     font-family: "Pacifico", cursive;
+     position: relative;
+     z-index: 0;
+     display: inline-block;
+     
+     
+}
+
+section h1::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background-color: #FEC260;
+    bottom: 50%;  
+    left: 0%;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+    
+}
+
+section h1:hover::before{
+  
+   height: 35px;
+}
+
+.form-control:focus {
+  border-color:  #FEC260 !important; 
+  box-shadow: 0 0 0 0.25rem  #fec1604f !important; 
+  outline: none;
+}
+
+.text-white{
+    background-color: #D1512D;
+    border: 2px solid #D1512D;
+}
+/* 
+#Supmit{
+    border-bottom: dashed 1px black;
+} */
+
+.bottom{
+     border-bottom: dashed 1px black;
+    
+
+}
+
+.bottom h2{
+       font-family: "Righteous", sans-serif;
+       background: linear-gradient(to right,#40A55B  60%,  #B4AC49 10%);
+       -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        border-top: dashed 1px black;
+}
+#Supmit:hover{
+    background-color: #d1512dda;
+    border: 2px solid  #d1512dda;
+}
+
+table thead{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+}

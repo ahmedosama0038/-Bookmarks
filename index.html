@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/stely.css">
+    <title>Bookmark</title>
+</head>
+<body>
+    <section class="py-5">
+     
+<div class="container d-flex flex-wrap justify-content-center align-items-center bottom">
+    <h1 class=" my-3  text-black text-center  ">Bookmarker</h1>
+    <h2 class="h3   w-100 text-center py-3 "><i class="fa-solid fa-bookmark icon"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark icon"></i></h2>
+
+<label for="name" class="text-black fw-bold w-100"> <i class="fa-solid fa-file-signature"></i> Sit Nama</label>
+ <input oninput="vildname()"  type="text" placeholder="Bookmarker name" id="name" class="form-control my-3 " >   
+<p class="alert alert-danger d-none w-100" id="pmasaga">Name must be at least 3 characters long"</p>
+<p class="alert alert-danger d-none w-100" id="masaga">Name must be at least 3 characters long"</p>
+
+<label for="Url" class="text-black fw-bold w-100"><i class="fa-solid fa-link"></i> Sit URL</label>
+ <input  oninput="validurl()"  type="text" placeholder="Wepsiet Url " id="Url" class="form-control my-3 " >  
+ <p class="alert alert-danger d-none w-100" id="pmurl">URL must start with http:// or https://</p>
+ <button  onclick="addBookmark()" class="ps-4 pe-4 pb-1 text-white rounded  my-4 "  id="Supmit">Supmit</button> 
+</div>
+
+    </section>
+
+<section class="py-5">
+ <div class="container">
+
+<table id="table" class="w-100  bg-white  text-center border-bottom-0">
+
+<thead>
+<tr>
+<th class="p-2"> Index</th>
+<th> Wepsiet Nama</th>
+<th> Visit</th>
+<th> Delete
+</th>
+</tr>
+</thead>
+ 
+<tbody id="body">
+<!-- 
+<td></td>
+<td></td>
+<td><button class=" btn btn-success ps-3 pe-3" id="Visit">Visit</button></td>
+<td><button class=" btn btn-danger" id="Delete">Delete</button></td> -->
+
+</tbody>   
+</table>
+
+
+ </div>
+</section>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
