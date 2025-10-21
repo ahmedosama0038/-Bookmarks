@@ -43,6 +43,16 @@ section h1:hover::before{
   outline: none;
 }
 
+.form-control.is-invalid:focus {
+  border-color: #dc3545 !important; 
+  box-shadow: 0 0 0 0.25rem #f5c6cb !important; 
+}   
+
+.form-control.is-valid:focus {
+  border-color: #40A55B !important; 
+  box-shadow: 0 0 0 0.25rem #cbf5c6 !important; 
+}   
+
 .text-white{
     background-color: #D1512D;
     border: 2px solid #D1512D;
